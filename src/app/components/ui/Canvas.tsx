@@ -47,7 +47,7 @@ export default function CanvasDots() {
         },
         animate: function () {
           for (let i = 0; i < dots.nb; i++) {
-            let dot = dots.array[i];
+            const dot = dots.array[i];
             if (dot.y < 0 || dot.y > canvas.height) {
               dot.vy = -dot.vy;
             } else if (dot.x < 0 || dot.x > canvas.width) {
@@ -60,8 +60,8 @@ export default function CanvasDots() {
         line: function () {
           for (let i = 0; i < dots.nb; i++) {
             for (let j = 0; j < dots.nb; j++) {
-              let i_dot = dots.array[i];
-              let j_dot = dots.array[j];
+              const i_dot = dots.array[i];
+              const j_dot = dots.array[j];
               if (
                 Math.abs(i_dot.x - j_dot.x) < dots.distance &&
                 Math.abs(i_dot.y - j_dot.y) < dots.distance

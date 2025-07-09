@@ -15,7 +15,7 @@ import ReKnewModal from './Modal/ReKnewModal';
 
 export default function Ourservices () {
     // eslint-disable-next-line no-unused-vars
-    const [scrollProgress, setScrollProgress] = useState(0);
+    // const [scrollProgress, setScrollProgress] = useState(0);
     const { scrollYProgress } = useScroll();
     const scaleX = useSpring(scrollYProgress, {
         stiffness: 100,
@@ -29,10 +29,10 @@ export default function Ourservices () {
         // document.title = 'Our Services | ReKnew';
 
         const handleScroll = () => {
-            const winScroll = document.documentElement.scrollTop;
-            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const calculated = (winScroll / height) * 100;
-            setScrollProgress(calculated);
+            // const winScroll = document.documentElement.scrollTop;
+            // const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            // const calculated = (winScroll / height) * 100;
+            // setScrollProgress(calculated);
         };
 
         window.addEventListener('scroll', handleScroll);

@@ -45,7 +45,7 @@ export default function SuccessStoryTwo () {
         </ul>
     );
 
-    const AchievementCard = ({ achievement, index }) => (
+    const AchievementCard = ({ achievement }) => (
         <motion.div 
             variants={item} 
             className="bg-white/50 dark:bg-slate-800/40 backdrop-blur-sm p-5 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 mb-4"

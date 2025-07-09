@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { Linkedin, MapPin, Mail, Phone } from "lucide-react";

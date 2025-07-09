@@ -23,10 +23,6 @@ const Slide = ({ isActive, children }) => (
 
 export default function SuccessstorySliderSection ()  {
     const [activeSlide, setActiveSlide] = useState(0);
-    const [isAnimating, setIsAnimating] = useState(false);
-    // eslint-disable-next-line no-unused-vars
-    const [direction, setDirection] = useState(0);
-    // const [ setAutoSlide] = useState(false);
 
     const slides = [
         { id: '1', title: 'Real-Time Engagement', content: <SuccessStoryOne /> },
@@ -39,12 +35,12 @@ export default function SuccessstorySliderSection ()  {
     };
 
     const nextSlide = () => {
-        setDirection(1);
+        // setDirection(1);
         setActiveSlide((prevIndex) => (prevIndex + 1) % slides.length);
     };
 
     const prevSlide = () => {
-        setDirection(-1);
+        // setDirection(-1);
         setActiveSlide((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
     };
 
@@ -56,7 +52,7 @@ export default function SuccessstorySliderSection ()  {
         };
         window.addEventListener('keydown', handleKeyDown);
         return () => window.removeEventListener('keydown', handleKeyDown);
-    }, [activeSlide, isAnimating]);
+    }, [activeSlide]);
 
     // Auto-slide
     // useEffect(() => {

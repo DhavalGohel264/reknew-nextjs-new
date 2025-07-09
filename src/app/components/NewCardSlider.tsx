@@ -34,16 +34,16 @@ export default function NewCardSlider  ({ cards }) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [, setIsAutoPlaying] = useState(true);
      
-    const [direction, setDirection] = useState(0);
+    // const [direction, setDirection] = useState(0);
 
     const previousSlide = () => {
-        setDirection(-1);
+        // setDirection(-1);
         setCurrentIndex((prevIndex) => (prevIndex - 1 + cards.length) % cards.length);
         setIsAutoPlaying(false);
     };
 
     const nextSlide = () => {
-        setDirection(1);
+        // setDirection(1);
         setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
         setIsAutoPlaying(false);
     };

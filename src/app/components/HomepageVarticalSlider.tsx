@@ -1,6 +1,5 @@
- 
-
-/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable react/no-unescaped-entities */
+ /* eslint-disable react-hooks/exhaustive-deps */
 'use client';
 import { useState, useEffect } from 'react';
 import CanvasDots from './ui/Canvas';
@@ -23,7 +22,7 @@ export default function HomepageVarticalSlider () {
     const [activeSlide, setActiveSlide] = useState(0);
     const [isMobile, setIsMobile] = useState(false);
 
-    const [direction, setDirection] = useState(0);
+    // const [direction, setDirection] = useState(0);
     const [touchStart, setTouchStart] = useState(0);
     const [touchEnd, setTouchEnd] = useState(0);
 
@@ -368,12 +367,12 @@ export default function HomepageVarticalSlider () {
     ];
 
     const nextSlide = () => {
-        setDirection(1);
+        // setDirection(1);
         setActiveSlide((prevIndex) => (prevIndex + 1) % slides.length);
     };
 
     const prevSlide = () => {
-        setDirection(-1);
+        // setDirection(-1);
         setActiveSlide((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
     };
 
@@ -477,7 +476,7 @@ export default function HomepageVarticalSlider () {
             ) : (
                 /* Mobile View - Sequential Display with improved navigation */
                 <div className="flex flex-col space-y-6 py-4 pb-16">
-                    {slides.map((slide, index) => (
+                    {slides.map((slide) => (
                         <div key={slide.id} className="py-[35px] px-2">
                             {slide.content}
                         </div>
