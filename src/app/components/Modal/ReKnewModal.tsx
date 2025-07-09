@@ -86,10 +86,10 @@ export default function ReKnewModal ({ isOpen, onClose }) {
 
             console.log('Response:', res.data);
             toast.success('Application submitted successfully!', {
-                toastStyle: {
-                    backgroundColor: '#FF512F',
-                    color: '#fff'
-                }
+                // toastStyle: {
+                //     backgroundColor: '#FF512F',
+                //     color: '#fff'
+                // }
             });
             setFormData({
                 firstName: '',
@@ -109,7 +109,7 @@ export default function ReKnewModal ({ isOpen, onClose }) {
         
             <ToastContainer
                 toastClassName="custom-toast"
-                bodyClassName="custom-toast-body"
+                className="custom-toast-body"
                 progressClassName="custom-toast-progress"
                 position="top-right"
                 autoClose={3000}
