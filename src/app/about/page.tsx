@@ -9,7 +9,7 @@ export const metadata:Metadata = {
     title: 'ReKnew AI Solutions',
     description:
       'Discover ReKnew’s AI-powered tools and solutions for enterprise workflow automation and transformation.',
-    url: 'https://reknew.ai/about',
+    url: 'https://reknew-nextjs-new-k5z2-git-main-djs-projects-223c96fb.vercel.app/about',
   },
 };
 
